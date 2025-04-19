@@ -6,8 +6,9 @@ import java.util.List;
 
 public interface ClienteService {
     Cliente create(Cliente cliente);
-    Cliente readById(Long idC);
     List<Cliente> readAll();
-    Cliente update(Long idC, Cliente clienteActualizado);
-    void delete(Long idC);
+    Cliente readById(Long id);
+    Cliente update(Long id, Cliente cliente);
+    void delete(Long id);
+    Cliente findByNombres(String nombres);
 }
